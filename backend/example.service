@@ -4,7 +4,7 @@ After=network.target
 Requires=mysql.service
 
 [Service]
-WorkingDirectory=/home/backend/app/backend/
+WorkingDirectory=/home/backend/app/4640app/backend/
 Type=simple
 User=backend
 ExecStart=/usr/local/bin/gunicorn wsgi:app -b 0.0.0.0:5000
